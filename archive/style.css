@@ -1,0 +1,172 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Custom Styles */
+
+html {
+    height: 1000px;
+    background: #FFFFFF;
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    width: 550px;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding-top: 100px;
+    min-height: 100vh;
+}
+
+h1 {
+  font-size: 3rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  padding-bottom: 1rem;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5rem;
+  color: rgb(40, 40, 40);
+  margin-bottom: 1rem;
+}
+
+
+.navigation {
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.navigation-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.navigation-links {
+  display: flex;
+  flex-direction: row;
+  font-size: .8rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  padding-bottom: 1.5rem;
+  width: 15rem;
+  justify-content: space-around;
+  color: rgb(191, 191, 191);
+}
+
+.navigation-link-selected {
+  color: rgb(0, 0, 0);
+}
+
+.footer {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background-color: white;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  margin: 2rem auto 1rem;
+  padding-bottom: 1rem;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  color: black;
+  width: 1.5rem;
+  height: 1.5rem;
+  padding-right: 1rem;
+}
+
+.card {
+  text-align: left;
+  background-color: rgb(253, 254, 255);
+  margin-bottom: 1rem;
+  padding: 1.5rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.card-title {
+  color: black;
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  padding-bottom: .5rem;
+}
+
+.card-paragraph {
+  font-size:.9rem;
+}
