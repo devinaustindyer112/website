@@ -44,21 +44,44 @@ table {
 
 /* Custom styles */
 
+h1 {
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  margin-bottom: .5rem;
+}
+
+
+h2 {
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5rem;
+  color: rgb(40, 40, 40);
+  margin-bottom: 1rem;
+}
+
 .grid-container {
   padding-top: 3rem;
   display: grid;
   grid-template-areas:
-    'profile navigation navigation navigation navigation empty'
-    'profile main main main main empty'
-    'profile footer footer footer footer empty';
+    'profile navigation'
+    'profile main'
+    'profile main';
 }
-
-.profile { grid-area: profile; }
 
 .navigation { 
   grid-area: navigation; 
   display: flex;
-  justify-content: center;
 }
 
 .navigation-content {
@@ -76,7 +99,7 @@ table {
   font-style: normal;
   padding-bottom: 1.5rem;
   width: 15rem;
-  justify-content: space-around;
+  justify-content:space-between;
   color: rgb(191, 191, 191);
 }
 
@@ -84,9 +107,34 @@ table {
   color: rgb(0, 0, 0);
 }
 
-.navigation-link {
-
+.profile { 
+  grid-area: profile; 
+  padding: 3rem;
+  width: 100%;
 }
 
-.main { grid-area: main; }
+.profile-image {
+  border-radius: 50%;
+  width: 8rem;
+  height: 8rem;
+  margin-bottom: 1rem;
+}
+
+.profile-links {
+ display: flex;
+}
+
+.profile-link {
+  color: black;
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-right: .5rem;
+}
+
+.main { 
+  grid-area: main; 
+  width: 50%
+}
+
+
 .footer { grid-area: footer; }
