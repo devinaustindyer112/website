@@ -155,5 +155,15 @@ p {
   display: none;
 }
 
+.card-header {
+  font-size: 1.5rem;
+}
+
+.card-subheader {
+  font-size: .8rem;
+  font-family: "Poppins", sans-serif;
+  color: grey;
+}
+
 
 .footer { grid-area: footer; }
